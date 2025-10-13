@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiran Fatima Farooq | Web Technologies Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css" />
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafc;
+      color: #002147;
+    }
+
+    header {
+      background-color: #002147;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    header img {
+      width: 80px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    header h1 {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+
+    nav {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #002147;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 15px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #0059b3;
+      text-decoration: underline;
+    }
+
+    /*  NEW — Active Page Highlight */
+    nav a.active {
+      color: #0059b3;
+      border-bottom: 2px solid #0059b3;
+      padding-bottom: 3px;
+    }
+
+    main {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .intro {
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .labs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .lab-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .lab-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .lab-card a {
+      display: block;
+      font-weight: bold;
+      color: #002147;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #002147;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        display: block;
+        margin-top: 10px;
+      }
+      .labs {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Uet Logo.png"  />
+    <h1>Kiran Fatima Farooq</h1>
+    <p>Department of Computer Science | University of Engineering & Technology, Peshawar</p>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="tasks/profile.html">Profile</a>
+    <a href="tasks/timetable.html">Schedule</a>
+    <a href="tasks/index.html">index</a>
+    <a href="tasks/registration.html">Registration</a>
+    <a href="https://uetpeshawar.edu.pk/" target="_blank">UET Website</a>
+  </nav>
+
+  <main id="intro">
+    <div class="intro">
+      <h2>Welcome to My Portfolio</h2>
+      <p>
+        This website contains my work for the <strong>CS 224L Web Technologies</strong> course,
+        taught by Mr. Mohammad. It showcases my lab exercises, HTML5 and CSS3 practice, and GitHub Pages deployment.
+      </p>
+    </div>
+
+    <div id="labs" class="labs">
+      <div class="lab-card">
+        <h3>Lab 01</h3>
+        <a href="tasks/profile.html">Profile Page</a>
+      </div>
+
+      <div class="lab-card">
+        <h3>Lab 02</h3>
+        <a href="tasks/timetable.html">Course Schedule Table</a>
+      </div>
+
+      <div class="lab-card">
+        <h3>Lab 03</h3>
+        <a href="tasks/navigation.html">Navigation Menu</a>
+      </div>
+
+      <div class="lab-card">
+        <h3>Lab 04</h3>
+        <a href="tasks/registration.html">Registration Form</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Kiran Fatima Farooq — CS 224L | UET Peshawar
+  </footer>
+</body>
+</html>

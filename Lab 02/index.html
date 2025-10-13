@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Menu</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <style>
+    /* Simple internal CSS (for quick testing) */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #003366;
+      padding: 15px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: white;
+      transition: width 0.3s;
+      margin-top: 3px;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.uetpeshawar.edu.pk/" target="_blank">UET Website</a>
+    </nav>
+  </header>
+
+  <!-- Internal sections -->
+  <section id="home">
+    <h1>Welcome to UET Portal</h1>
+    <p>This is the home section with general information.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Department</h2>
+    <p>The Department of Computer Science focuses on innovation and excellence.</p>
+  </section>
+
+  <section id="courses">
+    <h2>Our Courses</h2>
+    <p>We offer BS, MS, and PhD programs in Computer Science.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@uetpeshawar.edu.pk</p>
+  </section>
+
+</body>
+</html>
